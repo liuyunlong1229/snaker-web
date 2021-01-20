@@ -41,18 +41,18 @@
 						<span>转派给：</span>
 					</td>
 					<td class="td_table_2" colspan="3">
-						<input type="hidden" id="nextOperator" name="nextOperator" value="">
-						<input type="text" id="nextOperatorName" readonly="readonly" name="nextOperatorName" class="input_520" value="">
-						<input type='button' class='button_70px' value='选择部门' id="selectOrgBtn" onclick="selectOrg('${ctx}', 'nextOperator', 'nextOperatorName')"/>
+						<input type="text" id="nextOperator" name="nextOperator" value="test">
+<%--						<input type="text" id="nextOperatorName" readonly="readonly" name="nextOperatorName" class="input_520" value="test">--%>
+<%--						<input type='button' class='button_70px' value='选择部门' id="selectOrgBtn" onclick="selectOrg('${ctx}', 'nextOperator', 'nextOperatorName')"/>--%>
 						<!-- <input type="text" class="input_240" id="nextOperator" name="nextOperator" value="${variable_approveDept['nextOperator'] }"/> -->
 					</td>
 				</tr>
 				<tr>
 					<td class="td_table_1"><span>抄送给：</span></td>
 					<td class="td_table_2" colspan="3">
-						<input type="hidden" id="ccOperator" name="ccOperator" value="">
-						<input type="text" id="ccOperatorName" readonly="readonly" name="ccOperatorName" class="input_520" value="">
-						<input type='button' class='button_70px' value='选择部门' onclick="selectOrg('${ctx}', 'ccOperator', 'ccOperatorName')"/>
+						<input type="text" id="ccOperator" name="ccOperator" value="">
+<%--						<input type="text" id="ccOperatorName" readonly="readonly" name="ccOperatorName" class="input_520" value="">--%>
+<%--						<input type='button' class='button_70px' value='选择部门' onclick="selectOrg('${ctx}', 'ccOperator', 'ccOperatorName')"/>--%>
 					</td>
 				</tr>
 			</table>

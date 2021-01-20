@@ -1188,6 +1188,9 @@
 				i+="</process>";
                 var nary=tarray.sort();
                 for(var idx=0;idx<tarray.length;idx++){
+                     if(nary[idx]==""){
+                         continue;
+                     }
                     if (nary[idx]==nary[idx+1]){
                         alert("连接线名称不能重复[" + nary[idx] + "]");
                         return;

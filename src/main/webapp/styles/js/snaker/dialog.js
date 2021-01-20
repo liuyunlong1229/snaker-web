@@ -3,6 +3,7 @@ function selectOrg(ctx, e1, e2)
 	var element1 = document.getElementById(e1);
 	var element2 = document.getElementById(e2);
  	var l  = window.showModalDialog(ctx + "/dialogs/selectDialog.jsp?type=orgTree"," ","dialogWidth:800px;dialogHeight:540px;center:yes;scrolling:yes");
+	//var  l= window.open(ctx + "/dialogs/selectDialog.jsp?type=orgTree",window,"dialogWidth=800px;dialogHeight=540px;center:yes;scrolling:yes");
  	if (l == null )
  	    return;
  	var result = splitUsersAndAccounts(l);
@@ -16,6 +17,7 @@ function selectOrgUser(ctx, e1, e2)
 	var element1 = document.getElementById(e1);
 	var element2 = document.getElementById(e2);
  	var l  = window.showModalDialog(ctx + "/dialogs/selectDialog.jsp?type=orgUserTree"," ","dialogWidth:800px;dialogHeight:540px;center:yes;scrolling:yes");
+	//var  l= window.open(ctx + "/dialogs/selectDialog.jsp?type=orgUserTree",window,"dialogWidth=800px;dialogHeight=540px;center:yes;scrolling:yes");
  	if (l == null )
  	    return;
  	var result = splitUsersAndAccounts(l);

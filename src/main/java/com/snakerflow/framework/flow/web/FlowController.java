@@ -118,7 +118,7 @@ public class FlowController {
         String orderId = request.getParameter(PARA_ORDERID);
         String taskId = request.getParameter(PARA_TASKID);
         String nextOperator = request.getParameter(PARA_NEXTOPERATOR);
-        if (StringUtils.isEmpty(orderId) && StringUtils.isEmpty(taskId)) {
+        if (StringUtils.isEmpty(orderId) && StringUtils.isEmpty(taskId)) { //启动流程
             facets.startAndExecute(processId, ShiroUtils.getUsername(), params);
         } else {
             String methodStr = request.getParameter(PARA_METHOD);
